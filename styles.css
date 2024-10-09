@@ -1,0 +1,163 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #120323;
+    color: #97bf04;
+    padding: 20px;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+    margin: 20px 0;
+}
+
+/* Figure styles */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        margin: 10px 0;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+    figcaption {
+        text-align: left;
+    }
+    figure img {
+        max-width: 400px;   
+        margin-right: 10px;
+        margin-left: 20px;
+        border: 5px solid red;
+    }
+
+    main {
+        order: 1;
+    }
+
+    aside {
+        order: 2;
+        width: 100%;
+        background-color: #97bf04;
+        padding: 15px;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    figure {
+        flex-direction: row;
+        justify-content: left;
+    }
+    figcaption {
+        text-align: left;
+    }
+
+    figure img {
+        max-width: 450px;
+        margin-right: 20px;
+        border: 5px solid red;
+    }
+
+    aside {
+        width: 100%;
+        background-color: #97bf04;
+        padding: 15px;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 1000px) {
+/*    #header h1 {
+        display: inline;
+        margin-left: 10px;
+        flex: row;
+    }
+*/
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .header-container img {
+        align-items: center;
+    }
+    .header-container h1 {
+        align-items: center;
+    }
+    #container {
+        flex-direction: row;
+    }
+    main {
+        flex: 3;
+        margin-right: 20px;
+    }
+    figure {
+        flex-direction: row;
+        justify-content: left;
+    }
+    figcaption {
+        text-align: left;
+    }
+    
+    figure img {
+        max-width: 300px;
+        margin-right: 20px;
+        border: 5px solid red;
+    }
+    aside {
+        flex: 1;    
+        background-color: #97bf04;
+        padding: 5px;
+        margin: auto    ;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #d9043d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    clear: both;
+}
